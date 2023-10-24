@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    background: linear-gradient(150deg, #f6f5f6, #b96cc6);
+    height: 100vh;
+}
+
+.Formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #585050;
+    border-radius: 15px;
+    color: #b96cc6; /* Agregamos color de texto blanco para que sea visible en el fondo */
+}
+
+.Formulario h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #e6e4e8;
+}
+
+.Username, .contraseña {
+    position: relative;
+    margin: 25px 0;
+}
+
+.Username input, .contraseña input {
+    width: 95%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #DDDDDD;
+}
+
+.Username label, .contraseña label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #ffffff;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.Username span::before, .contraseña span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #7E6096;
+    transition: .5s;
+}
+
+.Username input:focus ~ label, .Username input:valid ~ label,
+.contraseña input:focus ~ label, .contraseña input:valid ~ label {
+    top: -5px;
+    color: #7E6096;
+}
+
+.Username input:focus ~ span::before, .Username input:valid ~ span::before,
+.contraseña input:focus ~ span::before, .contraseña input:valid ~ span::before {
+    width: 95%;
+}
+
+.Recordar, .Registrarse {
+    color: rgb(252, 252, 252); /* Agregamos color de texto blanco para que sea visible en el fondo */
+    text-align: center;
+}
+
+a {
+    color: #7E6096;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+

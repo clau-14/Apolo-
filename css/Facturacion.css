@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+:root {
+    --body-color: #9B27B00D;
+    --sidebar-color: #FFFFFF;
+    --primary-color: #9C27B0;
+    --primary-color-light: #9B27B00D;
+    --colo-nuevo: #370617;
+    --toggle-color: #DDDDDD;
+    --text-color: #707070;
+    --color_botones_guardar: #5ccb5f;
+    --color_boton_cancelar: #ef2947;
+
+    --tra-03: all 0.2s ease;
+    --tra-04: all 0.3s ease;
+    --tra-05: all 0.4s ease;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24pt;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--colo-nuevo);
+    text-align: center;
+    text-decoration: underline;
+}
+
+table {
+    font-family: 'Poppins', sans-serif;
+    color: var(--colo-nuevo);
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: bold;
+    background-color: var(--body-color);
+    border-collapse: collapse;
+    border: 2px solid navy;
+    width: 90%; /* Ajusta el ancho de la tabla */
+    margin: 0 auto; /* Centra la tabla en la página */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--body-color);
+    margin: 0;
+    padding: 0;
+}
+
+input[type="radio"] {
+    margin-right: 15px;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+textarea {
+    width: 100%; /* Ajusta el ancho de estos elementos al 100% */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    padding: 10px;
+    margin: 5px 0;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    display: block; /* Hace que los botones ocupen todo el ancho disponible */
+    margin: 10px auto; /* Centra los botones en la página */
+}
+
+input[type="text"],
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+  

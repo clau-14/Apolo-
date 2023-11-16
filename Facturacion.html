@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Facturacion.css">
+</head>
+<body>
+    <h3>Facturación</h3>
+
+    <form action="procesar_factura.php" method="post">
+        <table align="center" cellpadding="10">
+            <tr>
+                <td>Cliente</td>
+                <td><input type="text" name="cliente" maxlength="60" /></td>
+            </tr>
+            <tr>
+                <td>Identificación</td>
+                <td><input type="text" name="identificacion" /></td>
+            </tr>
+            <tr>
+                <td>Fecha</td>
+                <td><input type="date" name="fecha" /></td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td><input type="tel" name="telefono" /></td>
+            </tr>
+            <tr>
+                <td>Producto</td>
+                <td><input type="text" name="producto" /></td>
+            </tr>
+            <tr>
+                <td>Opciones</td>
+                <td><button>Seleccionar</button></td>
+            </tr>
+            <tr>
+                <td>Servicios</td>
+                <td><button>Seleccionar</button></td>
+            </tr>
+            <tr>
+                <td>Cantidad</td>
+                <td><input type="number" name="cantidad" /></td>
+                <td><button>Seleccionar</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Agregar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <table align="center" cellpadding="10">
+        <tr>
+            <th>Descripción</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Total</th>
+        </tr>
+        <!-- Aquí puedes agregar dinámicamente más filas según sea necesario -->
+        <tr>
+            <td>Producto 1</td>
+            <td>1</td>
+            <td>$10.00</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Producto 2</td>
+            <td>2</td>
+            <td>$15.00</td>
+            <td>$30.00</td>
+        </tr>
+        <!-- Fin de las filas de ejemplo -->
+        <tr>
+            <td colspan="3" align="right">Total:</td>
+            <td>$40.00</td>
+        </tr>
+        <tr>
+            <td colspan="4" align="center">
+                <button onclick="convertirAPDF()">Convertir a PDF</button>
+                <button onclick="imprimir()">Imprimir</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function convertirAPDF() {
+            // Lógica para convertir a PDF
+            alert("Convertir a PDF");
+        }
+
+        function imprimir() {
+            // Lógica para imprimir
+            alert("Imprimir");
+        }
+    </script>
+</body>
+</html>
+
+
+
